@@ -4,6 +4,8 @@ using EventHubsConsumer;
 
 var builder = Host.CreateApplicationBuilder(args);
 
+builder.AddServiceDefaults();
+
 var ns = builder.Configuration.GetConnectionString("eventhubns");
 
 builder.Services.AddSingleton(sp =>

@@ -3,6 +3,9 @@ using Azure.Messaging.EventHubs;
 using Azure.Messaging.EventHubs.Producer;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.AddServiceDefaults();
+
 var ns = builder.Configuration.GetConnectionString("eventhubns");
 
 builder.Services.AddSingleton(sp =>
@@ -20,5 +23,7 @@ app.MapPost("/message", async (Stream body, EventHubProducerClient producerClien
 
     return Results.Accepted();
 });
+
+app.MapDefaultEndpoints();
 
 app.Run();

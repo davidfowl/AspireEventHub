@@ -1,5 +1,5 @@
 # For more info on HTTP files go to https://aka.ms/vs/httpfile
-@Url=http://localhost:5078
+@Url=https://api.nicehill-77de585d.westus3.azurecontainerapps.io
 
 POST {{Url}}/message
 Content-Type: application/json

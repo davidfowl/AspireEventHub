@@ -11,4 +11,8 @@
     <PackageReference Include="Azure.Messaging.EventHubs" Version="5.11.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EventHubs.ServiceDefaults\EventHubs.ServiceDefaults.csproj" />
+  </ItemGroup>
+
 </Project>
