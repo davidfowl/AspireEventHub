@@ -10,9 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aspire.Hosting" Version="8.0.0-preview.4.24116.5" />
-    <PackageReference Include="Aspire.Hosting.Azure" Version="8.0.0-preview.4.24116.5" />
-    <PackageReference Include="Aspire.Hosting.Azure.Provisioning" Version="8.0.0-preview.4.24116.5" />
+    <PackageReference Include="Aspire.Hosting" Version="8.0.0-preview.4.24124.4" />
+    <PackageReference Include="Aspire.Hosting.Azure" Version="8.0.0-preview.4.24124.4" />
+    <PackageReference Include="Aspire.Hosting.Azure.Provisioning" Version="8.0.0-preview.4.24124.4" />
   </ItemGroup>
 
   <ItemGroup>
