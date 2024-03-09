@@ -6,6 +6,9 @@ public class AzureEventHubsResource(string name, string path) :
 {
     public BicepOutputReference NamespaceEndpoint => new("serviceBusEndpoint", this);
 
+    public ValueTask<string?> GetConnectionStringAsync(CancellationToken cancellationToken) =>
+        NamespaceEndpoint.GetValueAsync(cancellationToken);
+
     string IResourceWithConnectionString.ConnectionStringExpression 
         => NamespaceEndpoint.ValueExpression;
 
